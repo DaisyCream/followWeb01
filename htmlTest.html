@@ -1,0 +1,158 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style type="text/css">
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    #seeWindow{
+        position: relative;
+        background-color: #696961;
+        overflow: hidden;
+    }
+
+    #back{
+        width: 1600px;
+        position: relative;
+    }
+
+    #bg{
+        position: relative;
+        background-image: url(img/back.jpg);
+        background-size: 100%;
+        float: left;
+    }
+
+    #tool{
+        position: relative;
+        background-color: #696961;
+        margin-left: -1px;
+        float: left;
+    }
+
+    .toolIn{
+        -webkit-animation: toolMoveIn 0.6s;
+    }
+
+    .toolOut{
+        -webkit-animation: toolMoveOut 0.6s;
+    }
+
+    @-webkit-keyframes toolMoveIn {
+        0%{
+            margin-left: 0px;
+        }
+        100%{
+            margin-left: -240px;
+        }
+     }
+
+    @-webkit-keyframes toolMoveOut {
+        0%{
+            margin-left: -240px;
+        }
+        100%{
+            margin-left: 0px;
+        }
+    }
+
+    #btu{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        position: absolute;
+        top: 4%;
+        right: 3%;
+        background-color: crimson;
+        font-size: 30px;
+        text-align: center;
+        line-height: 40px;
+        font-weight: bolder;
+        color: #ffffff;
+        box-shadow: 0px 0px 5px crimson;
+        cursor: pointer;
+    }
+
+    .btuTurnIn{
+        -webkit-animation: btuTurnIn 1s;
+    }
+
+    .btuTurnOut{
+        -webkit-animation: btuTurnOut 1s;
+    }
+
+    @-webkit-keyframes btuTurnIn {
+        0%{
+            -webkit-transform: rotate(0deg);
+        }
+        100%{
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes btuTurnOut {
+        0%{
+            -webkit-transform: rotate(360deg);
+        }
+        100%{
+            -webkit-transform: rotate(0deg);
+        }
+    }
+
+    #title{
+        position: absolute;
+        font-size: 60px;
+        color: aliceblue;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    ul{
+        position: absolute;
+        width: 480px;
+        top: 38%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    li{
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        border-radius: 50px;
+        position: relative;
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 25px;
+
+    }
+</style>
+<body>
+    <div id="seeWindow" >
+        <div id="back">
+            <div id="bg"></div>
+            <div id="tool" style="width: 240px"></div>
+        </div>
+        <div id="btu">+</div>
+        <div id="title">DaisyCream</div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
+    </div>
+</body>
+</html>
+<script src="htmlTest.js"></script>
